@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 var noon = 12;
 var evening = 18; // 6PM
 var wakeUpTime = 9; // 9AM
@@ -110,7 +112,10 @@ var napTimeEvent = function() {
 	napTime = napTimeSelector.value;
 };
 
-partyTimeButton.addEventListener("click", partyEvent);
+// Replacing this code with jquery code below: partyTimeButton.addEventListener("click", partyEvent);
+$("#partyTimeButton").click(partyEvent);
 wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
 lunchTimeSelector.addEventListener("change", lunchTimeEvent);
 napTimeSelector.addEventListener("change", napTimeEvent);
+
+});
